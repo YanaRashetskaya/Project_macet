@@ -1,0 +1,139 @@
+/* Vars */
+@primary: #0036FF;
+@text: #FFF;
+@inactive_text: #809AFF;
+@burger: #000;
+
+.toggle {
+  z-index: 1;
+  display: block;
+  width: 100%;
+
+  a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .hidden_checkbox {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 2;
+
+    -webkit-touch-callout: none;
+
+    &:checked {
+      position: absolute;
+
+      width: 50%;
+      height: 180px;
+      top: -50px;
+      left: -50px;
+    }
+
+    &:checked~.burger {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+  }
+
+  .burger {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .burger_line {
+      display: block;
+      width: 100%;
+      height: 2px;
+      margin-bottom: 5px;
+      position: relative;
+
+      background-color: @burger;
+      border-radius: 1px;
+
+      z-index: 1;
+
+      opacity: 1;
+      transform: rotate(0deg) scale(1, 1);
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  margin: 0px 0 0 0px;
+  padding-left: 0;
+
+  background: @primary;
+  list-style-type: none;
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+  color: @text;
+
+  .header_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 25 px;
+
+    .menu_logo {
+      padding-top: 50px;
+      font-size: 20px;
+      font-weight: lighter;
+      letter-spacing: 2.5px;
+    }
+
+    .line {
+      height: 1px;
+      background-color: @text;
+      width: 80%;
+
+      margin: 10px 0 25px 0;
+    }
+  }
+
+  li {
+    padding: 10px 0;
+    font-size: 22px;
+    margin: 10px 0;
+
+    font-size: 18px;
+    font-weight: bolder;
+  }
+}
+
+.active {
+  color: @text;
+}
+
+.inactive {
+  color: @inactive_text;
+}
+
+#menuToggle .hidden_checkbox:checked~ul {
+  transform: none;
+}

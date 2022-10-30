@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcelona</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/styles.less" />
+    <link rel="stylesheet/less" type="text/css" href="styles/barcelona.less" />
+    <link rel="stylesheet/less" type="text/css" href="styles/menu.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav role="navigation" class="header__nav">
+                <div class="toggle" id="menuToggle">
+                    <input type="checkbox" class="hidden_checkbox" />
+                    <div class="burger">
+                        <span class="burger_line"></span>
+                        <span class="burger_line"></span>
+                        <span class="burger_line"></span>
+                    </div>
+                    <ul class="menu">
+                        <div class="header_block">
+                            <h2 class="menu_logo">FOOODIES</h2>
+                            <div class="line"></div>
+                        </div>
+                        <a href="#">
+                            <li class="item active">DAILY DIGEST</li>
+                        </a>
+                        <a href="barcelona_page.html">
+                            <li class="item active">BARCELONA</li>
+                        </a>
+                        <a href="page8__Localfood.html">
+                            <li class="item active">LONDON</li>
+                        </a>
+                        <a href="#">
+                            <li class="item inactive">BERLIN</li>
+                        </a>
+                        <a href="#">
+                            <li class="item inactive">NEW YORK</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+            <h2 class="cousines__title title">Barcelona</h2>
+        </header>
+        <main class="main">
+            <div class="cousines">
+                <a href="#" class="cousines__item">
+                    <img src="/images_page1_Barcelona/food_icon.svg" alt="food_icon" class="cousines__item__icon">
+                    <p class="cousines__item__name">Spanish</p>
+                    <button class="yellow-button cousines__item__button">15 places</button>
+                </a>
+                <a href="#" class="cousines__item">
+                    <img src="/images_page1_Barcelona/food_icon.svg" alt="food_icon" class="cousines__item__icon">
+                    <p class="cousines__item__name">Asian</p>
+                    <button class="yellow-button cousines__item__button">15 places</button>
+                </a>
+                <a href="/page2__Latino.html" class="cousines__item">
+                    <img src="/images_page1_Barcelona/food_icon.svg" alt="food_icon" class="cousines__item__icon">
+                    <p class="cousines__item__name">Latino</p>
+                    <button class="yellow-button cousines__item__button">15 places</button>
+                </a>
+                <a href="#" class="cousines__item">
+                    <img src="/images_page1_Barcelona/food_icon.svg" alt="food_icon" class="cousines__item__icon">
+                    <p class="cousines__item__name">American</p>
+                    <button class="yellow-button cousines__item__button">15 places</button>
+                </a>
+                <a href="#" class="cousines__item">
+                    <img src="/images_page1_Barcelona/food_icon.svg" alt="food_icon" class="cousines__item__icon">
+                    <p class="cousines__item__name">Brunch</p>
+                    <button class="yellow-button cousines__item__button">15 places</button>
+                </a>
+                <a href="#" class="cousines__item">
+                    <img src="/images_page1_Barcelona/food_icon.svg" alt="food_icon" class="cousines__item__icon">
+                    <p class="cousines__item__name">Vegeterian</p>
+                    <button class="yellow-button cousines__item__button">15 places</button>
+                </a>
+                <a href="#" class="cousines__item">
+                    <img src="/images_page1_Barcelona/food_icon.svg" alt="food_icon" class="cousines__item__icon">
+                    <p class="cousines__item__name">Italian</p>
+                    <button class="yellow-button cousines__item__button">15 places</button>
+                </a>
+            </div>
+            <section class="all-places">
+                <h2 class="all-places__title title">All places</h2>
+                <div class="all-places__list">
+                    <div class="place">
+                        <img src="/images_page1_Barcelona/place1.jpg" alt="place1" class="place__image">
+                        <h3 class="place__header">La Gringa</h3>
+                        <p class="place__description">Mexican-American</p>
+                        <p class="place__price">€15/person</p>
+                    </div>
+                    <div class="place">
+                        <img src="/images_page1_Barcelona/place2.jpg" alt="place2" class="place__image">
+                        <h3 class="place__header">El Pachuco</h3>
+                        <p class="place__description">Best nachos in town</p>
+                        <p class="place__price">€15/person</p>
+                    </div>
+                    <div class="place">
+                        <img src="/images_page1_Barcelona/place3.jpg" alt="place3" class="place__image">
+                        <h3 class="place__header">El Tamarindo</h3>
+                        <p class="place__description">Mexican-American</p>
+                        <p class="place__price">€15/person</p>
+                    </div>
+                    <div class="place">
+                        <img src="/images_page1_Barcelona/place4.jpg" alt="place4" class="place__image">
+                        <h3 class="place__header">Taco Alto Born</h3>
+                        <p class="place__description">Best nachos in town</p>
+                        <p class="place__price">€15/person</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

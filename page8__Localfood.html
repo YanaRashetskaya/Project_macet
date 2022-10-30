@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+    <link rel="stylesheet/less" type="text/css" href="styles/page8__Localfood.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+    <link rel="stylesheet/less" type="text/css" href="styles/menu.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav role="navigation" class="header__nav">
+                <div class="toggle" id="menuToggle">
+                    <input type="checkbox" class="hidden_checkbox" />
+                    <div class="burger">
+                        <span class="burger_line"></span>
+                        <span class="burger_line"></span>
+                        <span class="burger_line"></span>
+                    </div>
+                    <ul class="menu">
+                        <div class="header_block">
+                            <h2 class="menu_logo">FOOODIES</h2>
+                            <div class="line"></div>
+                        </div>
+                        <a href="#">
+                            <li class="item active">DAILY DIGEST</li>
+                        </a>
+                        <a href="barcelona_page.html">
+                            <li class="item active">BARCELONA</li>
+                        </a>
+                        <a href="page8__Localfood.html">
+                            <li class="item active">LONDON</li>
+                        </a>
+                        <a href="#">
+                            <li class="item inactive">BERLIN</li>
+                        </a>
+                        <a href="#">
+                            <li class="item inactive">NEW YORK</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+            <a href="index-main-page.html" class="header__button">
+                <button class="button__london yellow-button">LONDON</button>
+            </a>
+        </header>
+        <main class="main">
+            <h2 class="country-title title">Local Food (via Airtable)</h2>
+            <div class="local-food">
+                <a class="local-food__photo" href="page9_Resto.html"> <img src="images_page2__Latino/LaGringa.png"></a>
+                <div class="local-food__title">Name</div>
+                <div class="local-food__food">Short description</div>
+                <a href="page9_Resto.html" class="local-food__price">Cost</a>
+            </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>

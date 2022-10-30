@@ -1,0 +1,91 @@
+@primary: #0036FF;
+@lines: #FFF;
+@text: #000;
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 110px 1fr;
+}
+
+.header {
+    grid-area: 1/1/2/2;
+    display: grid;
+    grid-template-columns: 1.5fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "nav nav"
+        "header .";
+
+    &__nav {
+        grid-area: nav;
+    }
+}
+
+.cousines {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+
+    &__item {
+        display: grid;
+        grid-template-columns: 30px 1fr 1fr;
+        align-items: center;
+        text-decoration: none;
+        color: @text;
+        border-bottom: 2px solid @lines;
+
+        &__icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        &__name {
+            font-size: 16px;
+        }
+
+        &__button {
+            justify-self: end;
+            box-sizing: content-box;
+            font-weight: lighter;
+            width: 87px;
+            height: 28px;
+        }
+    }
+}
+
+.all-places {
+    display: grid;
+    grid-template-rows: 80px 1fr;
+    margin-top: 35px;
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+}
+
+.place {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    margin-bottom: 1em;
+
+    &__image {
+        width: 100%;
+    }
+
+    &__header {
+        font-weight: bolder;
+        font-size: larger;
+        margin: 0.25em 0;
+    }
+
+    &__description {
+        margin: 0.25em 0;
+    }
+
+    &__price {
+        margin: 0.25em 0;
+        color: @primary;
+    }
+}

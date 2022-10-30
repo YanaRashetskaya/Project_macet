@@ -1,0 +1,47 @@
+/* Переменные */
+
+@primary: #0036FF;
+@secondary: #FFE500;
+@background: #E5E5E5;
+
+body {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: @background;
+}
+
+.wrapper {
+    max-width: 767px;
+    margin: 0px auto;
+    padding: 45px 20px;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 400;
+    color: #464646;
+}
+
+.date {
+    color: #9A9A9A;
+    font-size: 14px;
+}
+
+.yellow-button {
+    display: flex;
+    border: none;
+    background-color: @secondary;
+    text-decoration: none;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+        background-color: #c7b304;
+        cursor: pointer;
+    }
+}

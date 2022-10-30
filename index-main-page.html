@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+    <link rel="stylesheet/less" type="text/css" href="styles/main-page.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+    <link rel="stylesheet/less" type="text/css" href="styles/menu.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav role="navigation" class="header__nav">
+                <div class="toggle" id="menuToggle">
+                    <input type="checkbox" class="hidden_checkbox" />
+                    <div class="burger">
+                        <span class="burger_line"></span>
+                        <span class="burger_line"></span>
+                        <span class="burger_line"></span>
+                    </div>
+                    <ul class="menu">
+                        <div class="header_block">
+                            <h2 class="menu_logo">FOOODIES</h2>
+                            <div class="line"></div>
+                        </div>
+                        <a href="#">
+                            <li class="item active">DAILY DIGEST</li>
+                        </a>
+                        <a href="barcelona_page.html">
+                            <li class="item active">BARCELONA</li>
+                        </a>
+                        <a href="page8__Localfood.html">
+                            <li class="item active">LONDON</li>
+                        </a>
+                        <a href="#">
+                            <li class="item inactive">BERLIN</li>
+                        </a>
+                        <a href="#">
+                            <li class="item inactive">NEW YORK</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header__logo">
+                <button class="logo__button">FOOODIES</button>
+            </div>
+        </header>
+        <main class="main">
+            <section class="countries">
+                <h2 class="countries__title title">The Guides</h2>
+                <div class="countries__btn">
+                    <div class="btn-main-page">
+                        <a href="/barcelona_page.html"
+                            class="btn-main-page__item btn-main-page__item-barcelona yellow-button">Barcelona</a>
+                        <a href="page8__Localfood.html"
+                            class="btn-main-page__item btn-main-page__item-london yellow-button">London</a>
+                        <a href="#" class="btn-main-page__item btn-main-page__item-berlin yellow-button">Berlin</a>
+                        <a href="#" class="btn-main-page__item btn-main-page__item-shanghai yellow-button">Shanghai</a>
+                        <a href="#" class="btn-main-page__item btn-main-page__item-toronto yellow-button">Toronto</a>
+                        <a href="#" class="btn-main-page__item btn-main-page__item-newyork yellow-button">New York</a>
+                    </div>
+                </div>
+            </section>
+            <section class="dailydose">
+                <h2 class="dailydose__title title">Daily Dose</h2>
+                <div class="jury">
+                    <div class="jury__photo"></div>
+                    <div class="jury__date date">Aug 12, 2020</div>
+                    <div class="jury__text">The jury is in: here is the best fusion taqueria in Barcelona</div>
+                </div>
+                <div class="blonderoast">
+                    <img class="blonderoast__photo" src="images_main_page/cup.jpg" alt="cup coffee">
+                    <div class="blonderoast__date date">Aug 11, 2020</div>
+                    <div class="blonderoast__text">What is blonde roast and where to buy</div>
+                </div>
+                <div class="salad">
+                    <img class="salad__photo" src="images_main_page/vegetables.jpg" alt="vegetables">
+                    <div class="salad__date date">Aug 10, 2020</div>
+                    <div class="salad__text">The most popular salad combos today</div>
+                </div>
+                <div class="bananas">
+                    <img class="bananas__photo" src="images_main_page/banana.jpg" alt="banana">
+                    <div class="bananas__date date">Aug 10, 2020</div>
+                    <div class="bananas__text">The restaurants that turn bananas into a work of art</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
